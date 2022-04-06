@@ -14,17 +14,17 @@
 
 ```
 # python run.py client
-Cranky Coin (CRNK) wallet > publickey
+MrRobot wallet > publickey
 ```
 *copy your public key*
 ```
-Cranky Coin (CRNK) wallet > privatekey
+MrRobot wallet > privatekey
 ```
 *copy your private key*
 
 **Running a full node**
 ```
-Cranky Coin (CRNK) wallet > quit
+MrRobot wallet > quit
 # python ./tools/encrypt.py
 ```
 *enter a secure passphrase*
@@ -43,11 +43,11 @@ Encrypted private key:
 
 ```
 # python run.py full
-Cranky Coin (CRNK) full node > help
+MrRobot full node > help
 ```
 
 **Running a mining node**
 ```
-Cranky Coin (CRNK) full node > mine start
-Cranky Coin (CRNK) full node > mine stop
+MrRobot full node > mine start
+MrRobot full node > mine stop
 ```
