@@ -23,7 +23,7 @@ class Queue(object):
             zmq.proxy(frontend, backend)
 
         except Exception as e:
-            logger.error("could not start queue: %s", e)
+            logger.error("erreur queue invalid: %s", e)
             raise
 
     @classmethod
