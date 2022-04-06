@@ -11,8 +11,8 @@ user:
     queue_bind_out: "tcp://127.0.0.1:30015"
     queue_processing_workers: 2
 network:
-    name: "Cranky Coin"
-    ticker_symbol: "CRNK"
+    name: "Mrrobot"
+    ticker_symbol: "MRBT"
     version: 1
     initial_coins_per_block: 50
     halving_frequency: 210000
