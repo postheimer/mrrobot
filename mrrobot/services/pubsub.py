@@ -18,7 +18,7 @@ class PubSub(object):
         ctx = zmq.Context.instance()
         s = ctx.socket(zmq.REP)
         s.bind(sync_with)
-        print("Waiting for subscriber to connect...")
+        print("En attente de connexion")
         s.recv()
         print("   Done.")
         s.send('GO')
@@ -45,7 +45,7 @@ class PubSub(object):
 
             #cls.sync_with_subscriber(bind_to)
         except Exception as e:
-            logger.error("could not start publishing server: %s", e.message)
+            logger.error("Serveur distant pas connecté: %s", e.message)
             raise
 
         print("Publishing...")
@@ -65,7 +65,7 @@ class PubSub(object):
 
             #cls.sync_with_publisher(connect_to)
         except Exception as e:
-            logger.error("could not start subscribe: %s", e.message)
+            logger.error("on ne peut pas envoyer a l'utilsateur: %s", e.message)
             raise
 
         print("Listening...")
