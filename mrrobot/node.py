@@ -5,7 +5,7 @@ from bottle import Bottle
 
 from mrrobot.models.block import Block, BlockHeader
 from mrrobot.models.transaction import Transaction
-from mrrobotmodels.enums import MessageType, TransactionType
+from mrrobot.models.enums import MessageType, TransactionType
 from mrrobot.services.queue import Queue
 from mrrobot.routes.permissioned import permissioned_app
 from mrrobot.routes.public import public_app
