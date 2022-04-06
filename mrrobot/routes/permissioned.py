@@ -28,7 +28,6 @@ def requires_whitelist(func):
 @requires_whitelist
 def post_to_inbox():
     body = request.json
-    # TODO: validate sender really is who they say they are using signature
     host = request.environ.get('HTTP_X_FORWARDED_FOR') or request.environ.get('REMOTE_ADDR')
     msg_type = body.get('type')
     if MessageType(msg_type) in MessageType:
